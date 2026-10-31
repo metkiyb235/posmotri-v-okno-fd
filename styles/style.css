@@ -12,76 +12,72 @@ html {
 .page {
   inline-size: 1200px;
   block-size: 100%;
-  margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
   display: flex;
-  margin: 133px 30px;
-  place-content:center;
+  margin: 133px auto;
+  place-content: center;
 }
 
 /*расположение элементов на странице*/
 
-.content{
-display: flex;
-gap:30px;
-bottom:0;
-width: 1140px;
+.content {
+  display: flex;
+  gap: 30px;
+  bottom: 0;
+  width: 1140px;
 }
 
-
-.result__video-container{
+.result__video-container {
   width: 711px;
   position: relative;
   margin-top: 78px;
-  padding-bottom:2px;
+  padding-bottom: 2px;
 }
 
-.result__video{
-width: 100%;
-height: 100%;
-cursor: pointer;
-margin: 0;
-display: block;
+.result__video {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  margin: 0;
+  display: block;
 }
 
-.search-form{
-display: flex;
-gap: 40px;
+.search-form {
+  display: flex;
+  gap: 40px;
 }
 
-.search-form__fieldset{
+.search-form__fieldset {
   border: none;
 }
 
-.search-form__fieldset-title{
+.search-form__fieldset-title {
   font-size: 18px;
   font-weight: 400;
-  font-family: 'Fira Sans Condensed',sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   margin-bottom: 3%;
 }
 
-
 /*заголовок*/
 
-.title{
-  font-size:75px;
+.title {
+  font-size: 75px;
   text-transform: uppercase;
   margin-bottom: 23px;
-  font-family:'Oswald',sans-serif;
+  font-family: "Oswald", sans-serif;
   line-height: 94%;
 }
 
-.content__accent{
-  color:#545050;
+.content__accent {
+  color: #545050;
 }
 
-.content__list-item{
+.content__list-item {
   margin-bottom: 30px;
 }
-
 
 /*кастомные отметки и пункты*/
 
@@ -95,127 +91,125 @@ gap: 40px;
   white-space: nowrap;
 }
 
-.search-form__checkbox-list{
+.search-form__checkbox-list {
   display: flex;
-  gap:16px;
+  gap: 16px;
 }
 
-.search-form__label{
+.search-form__label {
   display: flex;
-  align-items:center;
+  align-items: center;
   width: fit-content;
 }
 
 /*текстовое поле*/
 
-.search-form__label input{
+.search-form__label input {
   cursor: pointer;
   background-color: transparent;
-  border-width: 1px 0 1px 0 ; 
-  border-style: solid; 
-  border-color:#fff; 
+  border-width: 1px 0 1px 0;
+  border-style: solid;
+  border-color: #fff;
   font-size: 18px;
-  font-style: 400;
+  font-weight: 400;
   appearance: none;
-  font-family: 'Fira Sans Condensed',sans-serif;
-  min-width:225px;
-  
+  font-family: "Fira Sans Condensed", sans-serif;
+  min-width: 225px;
 }
 
-.search-form__label input:has(:focus-visible){
+.search-form__label input:has(:focus-visible) {
   outline: solid 1px #fff;
 }
 
-.search-form__textfield{
+.search-form__textfield {
   appearance: none;
-  color:#fff;
+  color: #fff;
 }
 
-.search-form__textfield::placeholder{
+.search-form__textfield::placeholder {
   color: rgb(255 255 255 / 0.7);
 }
 
 /*чекбоксы*/
 
-.search-form__pseudo-checkbox{
+.search-form__pseudo-checkbox {
   height: 19px;
   width: 19px;
- display: inline-block;
- border: 2px solid #fff;
- padding: 1px;
- cursor: pointer;
- margin-right: 5px;
+  display: inline-block;
+  border: 2px solid #fff;
+  padding: 1px;
+  cursor: pointer;
+  margin-right: 5px;
 }
 
-.search-form__label-text:hover{
+.search-form__label-text:hover {
   text-decoration: underline;
-  cursor: pointer
+  cursor: pointer;
 }
 
-.search-form__pseudo-checkbox::after{
-  content:'';
+.search-form__pseudo-checkbox::after {
+  content: "";
   display: block;
   background-color: #fff;
   height: 100%;
   width: 100%;
-  opacity: 0
+  opacity: 0;
 }
 
-.search-form__checkbox:checked+.search-form__pseudo-checkbox::after{
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   opacity: 1;
 }
 
 /*свойства кнопок*/
-.button{
+.button {
   cursor: pointer;
   background-color: transparent;
   border: solid 1px #fff;
   font-size: 18px;
   color: #fff;
-  font-style: bold;
+  font-weight: bold;
 }
 
-.button:hover{
+.button:hover {
   text-decoration: underline;
 }
 
-.button:active{
-  background-color:#545050;
+.button:active {
+  background-color: #545050;
 }
 
-.button:focus-visible{
+.button:focus-visible {
   outline: solid 1px #fff;
 }
 
-.search-form__submit-button{
+.search-form__submit-button {
   place-self: end;
   width: 27%;
   min-height: 33px;
-  font-size: 700;
-  font-family: 'Fira Sans Condensed';
+  font-weight: 700;
+  font-family: "Fira Sans Condensed", sans-serif;
 }
 
-.more-button{
+.more-button {
   width: 100%;
   height: 34px;
 }
 
-
 /*карточки*/
 
-.content__video-card{
+.content__video-card {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: start;
 }
 
-.content__list-container{
+.content__list-container {
   height: 300px;
-  overflow-y:scroll;
+  overflow-y: scroll;
   position: relative;
 }
 
-.content__card-link{
+.content__card-link {
   display: block;
   margin: 0 3px 0 3px;
   text-decoration: none;
@@ -223,40 +217,40 @@ gap: 40px;
   cursor: pointer;
 }
 
-.content__video-card-title{
+.content__video-card-title {
   font-size: 30px;
   text-transform: uppercase;
-  font-family:'Oswald',sans-serif;
+  font-family: "Oswald", sans-serif;
   line-height: 1.2;
 }
 
-.content__video-card-description{
+.content__video-card-description {
   font-size: 18px;
-  font-family: 'Fira Sans Condensed',sans-serif;
-  font-size: 400s;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
 }
 
-.content__video-card-description-container{
+.content__video-card-description-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; 
+  justify-content: flex-start;
 }
 
-.content__video-card-thumbnail{
+.content__video-card-thumbnail {
   width: 194px;
   height: 103px;
 }
 
-.content__card-link_current:active{
-  background-color:#545050;
+.content__card-link_current:active {
+  background-color: #545050;
 }
 
-.content__card-link:hover{
-text-decoration: underline;
+.content__card-link:hover {
+  text-decoration: underline;
 }
 
-.content__card-link:focus-visible{
-   outline: solid 1px #fff;
+.content__card-link:focus-visible {
+  outline: solid 1px #fff;
 }
 
 h1,
@@ -288,5 +282,5 @@ ol {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }
