@@ -30,7 +30,6 @@ html {
   width: 1140px;
 }
 
-
 .result__video-container {
   position: relative;
   margin-top: 78px;
@@ -43,21 +42,21 @@ html {
   cursor: pointer;
   margin: 0;
   display: block;
-  background-color: transparent ; 
-  object-fit: cover; 
+  background-color: transparent;
+  object-fit: cover;
 }
 
 .result__video::-webkit-media-controls-panel {
-  background: transparent ;
-  background-image: none ;
-  box-shadow: none ;
+  background: transparent;
+  background-image: none;
+  box-shadow: none;
 
-  padding: 0 20px ; 
+  padding: 0 20px;
 }
 
 .result__video::-webkit-media-controls-enclosure {
-  background: transparent ;
-  box-shadow: none ;
+  background: transparent;
+  box-shadow: none;
 }
 
 .search-form {
