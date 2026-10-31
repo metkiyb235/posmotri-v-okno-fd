@@ -1,6 +1,6 @@
 # Проект «Посмотри в окно» — Стилизация интерфейса
 
-[https://github.com/username/posmotri-v-okno-fd](https://github.com/metkiyb235/posmotri-v-okno-fd)
+(https://github.com/metkiyb235/posmotri-v-okno-fd)
 
 Фронтенд-приложение интерфейса видеотрансляций из разных городов. Проект выполнен в рамках адаптации макета под строгие визуальные требования гайдлайнов и pixel-perfect соответствия.
 
